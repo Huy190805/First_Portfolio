@@ -3,61 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Professional Portfolio</title>
+    <title>Your Name | Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="light-mode">
 
-    <header>
-        <h1>[Your Name]</h1>
-        <p>Software Developer | Web Enthusiast | Problem Solver</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+
+    <header class="hero">
+        <div class="header-content">
+            <h1 class="fade-in-text">[Your Name]</h1>
+            <p class="subtitle">Full-Stack Developer | Building Scalable Web Solutions</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section id="about" class="container">
-        <h2>👋 About Me</h2>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-img">
-        <p>I am a passionate developer with a focus on building efficient, modern, and user-friendly applications. I specialize in [Your Main Skill, e.g., JavaScript and React] and am always eager to learn new technologies and tackle complex challenges.</p>
-        <p>Connect with me on:</p>
-        <ul class="social-links">
-            <li><a href="[Your LinkedIn URL]" target="_blank">LinkedIn</a></li>
-            <li><a href="[Your GitHub URL]" target="_blank">GitHub</a></li>
-            <li><a href="[Your Twitter/X URL]" target="_blank">Twitter/X</a></li>
-        </ul>
+    <section id="about" class="section-container">
+        <h2>About Me</h2>
+        <div class="about-flex">
+            <img src="https://via.placeholder.com/200/40a0ff/ffffff?text=Profile" alt="Profile Picture" class="profile-img">
+            <p>I am a passionate developer with X years of experience, specializing in clean code and efficient performance. My focus is on creating beautiful, responsive user interfaces and robust back-end APIs. I thrive in collaborative environments and am committed to continuous learning in the tech landscape.</p>
+        </div>
     </section>
 
-    <section id="projects" class="container">
-        <h2>💡 My Projects</h2>
-
-        <div class="project-card">
-            <h3>Project Title 1: [E-commerce App]</h3>
-            <p>A full-stack application built with [Technology 1] and [Technology 2]. Features user authentication and payment processing.</p>
-            <a href="[Link to Live Project]" target="_blank">View Live</a> | 
-            <a href="[Link to GitHub Repo]" target="_blank">GitHub Repo</a>
+    <section id="skills" class="section-container">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Front-End</h3>
+                <ul>
+                    <li>HTML5, CSS3, JavaScript (ES6+)</li>
+                    <li>React, Vue.js, jQuery</li>
+                    <li>Bootstrap, Tailwind CSS</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Back-End</h3>
+                <ul>
+                    <li>Node.js (Express), Python (Django/Flask)</li>
+                    <li>PHP, Ruby on Rails (optional)</li>
+                    <li>RESTful API Design</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3>Databases & Tools</h3>
+                <ul>
+                    <li>PostgreSQL, MongoDB, MySQL</li>
+                    <li>Git/GitHub, Docker, AWS/Azure</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
         </div>
+    </section>
 
-        <div class="project-card">
-            <h3>Project Title 2: [Task Manager]</h3>
-            <p>A responsive front-end task manager using vanilla JavaScript for state management and local storage for data persistence.</p>
-            <a href="[Link to Live Project]" target="_blank">View Live</a> | 
-            <a href="[Link to GitHub Repo]" target="_blank">GitHub Repo</a>
+    <section id="projects" class="section-container">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            
+            <article class="project-card">
+                <img src="https://via.placeholder.com/400x250/34d399/ffffff?text=Project+1" alt="Project 1 Screenshot">
+                <h3>Data Visualization Dashboard</h3>
+                <p>A responsive dashboard application built using React and D3.js to track real-time stock data. (Tech: React, D3.js, Firebase)</p>
+                <div class="project-links">
+                    <a href="[Live Link 1]" target="_blank" class="button primary">View Live</a>
+                    <a href="[Repo Link 1]" target="_blank" class="button secondary">GitHub</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="https://via.placeholder.com/400x250/f97316/ffffff?text=Project+2" alt="Project 2 Screenshot">
+                <h3>Personal Blog Engine</h3>
+                <p>A custom blogging platform with full CMS functionality, built with Python/Flask and PostgreSQL. Focus on SEO and performance. (Tech: Flask, PostgreSQL, Docker)</p>
+                <div class="project-links">
+                    <a href="[Live Link 2]" target="_blank" class="button primary">View Live</a>
+                    <a href="[Repo Link 2]" target="_blank" class="button secondary">GitHub</a>
+                </div>
+            </article>
+            
+            </div>
+    </section>
+
+    <section id="contact" class="section-container">
+        <h2>Get in Touch</h2>
+        <p>Whether you have a project idea or just want to chat, my inbox is always open.</p>
+        <a href="mailto:your.email@example.com" class="button primary large-button">Email Me</a>
+        <div class="contact-links">
+            <a href="[LinkedIn Link]" target="_blank">LinkedIn</a> | 
+            <a href="[GitHub Link]" target="_blank">GitHub</a> | 
+            <a href="[Resume PDF Link]">Download Resume</a>
         </div>
-        
-        </section>
-
-    <section id="contact" class="container">
-        <h2>✉️ Get in Touch</h2>
-        <p>I am currently open to new opportunities and collaborations. Feel free to reach out!</p>
-        <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
     </section>
 
     <footer>
-        <p>&copy; <script>document.write(new Date().getFullYear())</script> [Your Name]. All rights reserved.</p>
+        <p>Built with ❤️ and deployed with GitHub Pages.</p>
     </footer>
 
+    <script>
+        // Simple JavaScript for Dark Mode Toggle
+        const toggleButton = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        toggleButton.addEventListener('click', () => {
+            if (body.classList.contains('light-mode')) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                toggleButton.textContent = '☀️';
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                toggleButton.textContent = '🌙';
+            }
+        });
+    </script>
 </body>
 </html>
